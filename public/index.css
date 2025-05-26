@@ -49,3 +49,6 @@ footer > div > strong{
     width:100%;
 }
 
+body > main > article > section > ul{
+    margin-left:37px;
+}
