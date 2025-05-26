@@ -31,9 +31,14 @@ function include(){
     });    
 } //include()
 function pathSite(){
-    if(window.location.href=="https://amir248.github.io/who-is-faster-PHP-or-JS/"){
+   return new Promise(()=>{
+    function goToFunctin(){
+         if(window.location.href=="https://amir248.github.io/who-is-faster-PHP-or-JS/"){
         document.querySelector('body > script:nth-child(2)').setAttribute("src","public/1mainScript.js")
     }
+    }
+    resolve(goToFunctin());
+   });
 }
 async function main(){
     await include();
