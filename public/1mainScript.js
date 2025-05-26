@@ -30,9 +30,13 @@ function include(){
         resolve(includeHTML());
     });    
 } //include()
-
+function pathSite(){
+    if(window.location.href=="https://qucu.ru/who-is-faster-php-or-js"){
+        document.querySelector('body > script:nth-child(2)').setAttribute("src","public/1mainScript.js")
+    }
+}
 async function main(){
     await include();
-
+    await pathSite();
 }
 main();
